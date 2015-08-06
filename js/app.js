@@ -17,10 +17,7 @@ var app = {
 				console.log(data);
 				
 				$.each(data, function(index, value) {
-					console.log(value.featured_image);
-			      $('ul.topcoat-list').append('<li class="topcoat-list__item">' +
-			      	'<h3>'+value.title+'</h3>' +
-			      	'<p>'+value.excerpt+'</p></li>');
+			      $('.main_list').append('<ons-list-item modifier="chevron" class="list-item-container"><ons-row><ons-col><div class="name">'+value.title+'</div><div class="desc">'+value.excerpt+'</div></ons-col><ons-col width="40px"></ons-col></ons-row></ons-list-item>');
 			    });
 			},
 			error: function(error){

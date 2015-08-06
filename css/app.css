@@ -1,0 +1,82 @@
+body{
+	background: #f9f9f9;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.app-padding{
+  padding: 0 20px;
+}
+
+.app-padding .list{
+  border: 1px solid rgba(0,0,0,0.15);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.app-padding .list .list__item{
+  margin-bottom: 30px;
+}
+
+.app-padding .name{
+  color: #222;
+  font-size: 24px;
+}
+
+.app-padding .desc p{
+  line-height: 18px;
+}
+
+
+/*  =============     sliding menu   ================== */
+.page--menu-page__background {
+  background-color: #333;
+  color: white;
+}
+
+.menu-close,
+.menu-close > .toolbar-button {
+  color: #999;
+}
+
+.menu-list,
+.menu-item:first-child,
+.menu-item {
+  background-color: transparent;
+  background-image: none !important;
+  border-color: transparent;
+  color: #fff;
+}
+
+.menu-item {
+  padding: 0 0 0 20px;
+  line-height: 52px;
+  height: 52px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+}
+
+.menu-item:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-notification {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  height: 16px;
+  line-height: 16px;
+  min-width: 16px;
+  font-weight: 600;
+}
+
+.bottom-menu-list,
+.bottom-menu-item:first-child,
+.bottom-menu-item {
+  border-color: #393939;
+  background-color: transparent;
+  background-image: none !important;
+  color: #ccc;
+}
+
+.bottom-menu-item:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
