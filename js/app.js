@@ -10,7 +10,7 @@ var app = {
 
 		$.ajax({
 			type: 'GET',
-			url: rootURL + '/posts?type=news',
+			url: rootURL + '/posts?type[]=post',
 			dataType: 'json',
 			success: function(data){
 
@@ -19,7 +19,6 @@ var app = {
 				$.each(data, function(index, value) {
 					console.log(value.featured_image);
 			      $('ul.topcoat-list').append('<li class="topcoat-list__item">' +
-			      	'<img src="'+value.featured_image.attachment_meta.sizes.medium.url+'" /><br>' +
 			      	'<h3>'+value.title+'</h3>' +
 			      	'<p>'+value.excerpt+'</p></li>');
 			    });
