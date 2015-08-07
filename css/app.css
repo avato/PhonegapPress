@@ -26,6 +26,11 @@ body{
   line-height: 18px;
 }
 
+.app-padding .main_list{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 
 /*  =============     sliding menu   ================== */
 .page--menu-page__background {
